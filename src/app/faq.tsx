@@ -1,11 +1,11 @@
 "use client";
 
 import React from "react";
-import { Typography, Accordion, AccordionHeader, AccordionBody } from "@material-tailwind/react";
+import { Accordion, AccordionHeader, AccordionBody } from "@material-tailwind/react";
 
 const FAQS = [
   {
-    title: "1.What is Transcribe AI, and how does it work?",
+    title: "1. What is Transcribe AI, and how does it work?",
     desc: "Transcribe AI is an advanced app designed to transcribe speech into text, translate it into multiple languages, and summarize meeting notes. It uses state-of-the-art AI to ensure accuracy and speed. Simply start the app, choose your input and target languages, and let the AI do the rest in real-time.",
   },
   {
@@ -27,43 +27,44 @@ const FAQS = [
 ];
 
 export function Faq() {
-  const [open, setOpen] = React.useState(0);
-  const handleOpen = (value: number) => setOpen(open === value ? 0 : value);
+  const [open, setOpen] = React.useState<number | null>(null);
+  const handleOpen = (value: number) => setOpen(open === value ? null : value);
 
   return (
     <section className="py-8 px-8 lg:py-20">
       <div className="container mx-auto">
         <div className="text-center">
-          <Typography variant="h1" color="blue-gray" className="mb-4">
-            Frequently asked questions
-          </Typography>
-          <Typography
-            variant="lead"
-            className="mx-auto mb-24 lg:w-3/5 !text-gray-500"
-          >
+          <h1 className="text-4xl font-bold text-blue-gray-900 mb-4">
+            Frequently Asked Questions
+          </h1>
+          <p className="text-lg text-gray-500 mx-auto mb-24 lg:w-3/5">
             Welcome to the AI Conference 2023 FAQ section. We&apos;re here to
             address your most common queries and provide you with the
             information you need to make the most of your conference experience.
-          </Typography>
+          </p>
         </div>
 
         <div className="mx-auto lg:max-w-screen-lg lg:px-20">
-          {FAQS.map(({ title, desc }, key) => (
+          {FAQS.map(({ title, desc }, index) => (
             <Accordion
-              key={key}
-              open={open === key + 1}
-              onClick={() => handleOpen(key + 1)}
+              key={index}
+              open={open === index + 1}
+              onClick={() => handleOpen(index + 1)}
+              placeholder="" // Added placeholder
+              onPointerEnterCapture={() => {}} // Added event handler
+              onPointerLeaveCapture={() => {}} // Added event handler
+              className="mb-4" // Optional: Add margin between accordions
             >
-              <AccordionHeader className="text-left text-gray-900">
+              <AccordionHeader
+                className="text-left text-gray-900"
+                placeholder="" // Added placeholder
+                onPointerEnterCapture={() => {}} // Added event handler
+                onPointerLeaveCapture={() => {}} // Added event handler
+              >
                 {title}
               </AccordionHeader>
               <AccordionBody>
-                <Typography
-                  color="blue-gray"
-                  className="font-normal text-gray-500"
-                >
-                  {desc}
-                </Typography>
+                <p className="text-gray-500 font-normal">{desc}</p>
               </AccordionBody>
             </Accordion>
           ))}
@@ -72,6 +73,5 @@ export function Faq() {
     </section>
   );
 }
-
 
 export default Faq;

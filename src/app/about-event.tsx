@@ -1,6 +1,5 @@
 "use client";
 
-import { Typography } from "@material-tailwind/react";
 import AboutCard from "@/components/about-card";
 
 const EVENT_INFO = [
@@ -21,20 +20,24 @@ const EVENT_INFO = [
 export function AboutEvent() {
   return (
     <section className="container mx-auto flex flex-col items-center px-4 py-10">
-      <Typography variant="h6" className="text-center mb-2" color="orange">
-      </Typography>
-      <Typography variant="h3" className="text-center" color="blue-gray">
+      {/* Replaced Typography with div for simplicity */}
+      <div className="text-center mb-2 text-orange-500 text-lg font-medium">
+        Discover the Future of AI-Powered Communication
+      </div>
+      <div className="text-center text-blue-gray-900 text-3xl font-bold">
         Why Transcrypt AI?
-      </Typography>
-      <Typography
-        variant="lead"
-        className="mt-2 lg:max-w-4xl mb-8 w-full text-center font-normal !text-gray-500"
-      >
-       Are you tired of juggling tools for transcription, translation, and note-taking? Meet Transcribe AI, the ultimate solution to handle your conversations, meetings, and recordings with ease. Powered by cutting-edge AI, Transcribe AI converts speech into text seamlessly, translates it into multiple languages, and even summarizes meetings into actionable insights. Whether you’re managing international teams, taking lecture notes, or simplifying your workflow, Transcribe AI is here to save you time and effort.
-
-
-      </Typography>
-      <div className="mt-8 w-full grid grid-cols-1 md:grid-cols-2 gap-4 ">
+      </div>
+      <div className="mt-2 lg:max-w-4xl mb-8 w-full text-center font-normal text-gray-500">
+        Are you tired of juggling tools for transcription, translation, and
+        note-taking? Meet Transcribe AI, the ultimate solution to handle your
+        conversations, meetings, and recordings with ease. Powered by
+        cutting-edge AI, Transcribe AI converts speech into text seamlessly,
+        translates it into multiple languages, and even summarizes meetings
+        into actionable insights. Whether you’re managing international teams,
+        taking lecture notes, or simplifying your workflow, Transcribe AI is
+        here to save you time and effort.
+      </div>
+      <div className="mt-8 w-full grid grid-cols-1 md:grid-cols-2 gap-4">
         {EVENT_INFO.map((props, idx) => (
           <AboutCard key={idx} {...props} />
         ))}

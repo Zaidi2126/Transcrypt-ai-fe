@@ -10,13 +10,24 @@ function Hero() {
       <div className="absolute inset-0 h-full w-full bg-gray-900/60" />
       <div className="grid min-h-screen px-8">
         <div className="container relative z-10 my-auto mx-auto grid place-items-center text-center">
-          <Typography variant="h1" color="white" className="lg:max-w-3xl">
+          {/* Typography Component with Missing Props Added */}
+          <Typography {...({} as any)} 
+            variant="h1"
+            color="white"
+            className="lg:max-w-3xl"
+            placeholder="" // Added placeholder
+            onPointerEnterCapture={() => {}} // Added event handler
+            onPointerLeaveCapture={() => {}} // Added event handler
+          >
             Transcrypt AI
           </Typography>
-          <Typography
+          <Typography {...({} as any)} 
             variant="lead"
             color="white"
             className="mt-1 mb-12 w-full md:max-w-full lg:max-w-2xl"
+            placeholder="" // Added placeholder
+            onPointerEnterCapture={() => {}} // Added event handler
+            onPointerLeaveCapture={() => {}} // Added event handler
           >
             Transcribe, Translate, Simplify: Your Words, Perfectly Captured.
           </Typography>
@@ -26,7 +37,15 @@ function Hero() {
               variant="gradient"
               color="white"
               className="flex items-center gap-2"
-              onClick={() => window.open('https://drive.google.com/uc?export=download&id=1kkuv4BRs3p_anhJVmDfvlbfpSHyFUbh4', '_blank')}
+              onClick={() => {
+                window.open(
+                  "https://drive.google.com/uc?export=download&id=1kkuv4BRs3p_anhJVmDfvlbfpSHyFUbh4",
+                  "_blank"
+                );
+              }}
+              placeholder="" // Added placeholder
+              onPointerEnterCapture={() => {}} // Added event handler
+              onPointerLeaveCapture={() => {}} // Added event handler
             >
               <FaWindows className="text-lg" /> Download for Windows
             </Button>
@@ -36,12 +55,16 @@ function Hero() {
               variant="gradient"
               color="white"
               className="flex items-center gap-2"
-              onClick={() => window.open('https://your-hosted-link-for-mac-file.com', '_blank')}
+              onClick={() => {
+                window.open("https://your-hosted-link-for-mac-file.com", "_blank");
+              }}
+              placeholder="" // Added placeholder
+              onPointerEnterCapture={() => {}} // Added event handler
+              onPointerLeaveCapture={() => {}} // Added event handler
             >
               <FaApple className="text-lg" /> Download for Mac
             </Button>
           </div>
-
         </div>
       </div>
     </div>
