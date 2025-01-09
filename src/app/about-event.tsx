@@ -29,12 +29,12 @@ export function AboutEvent() {
       </div>
       <div className="mt-2 lg:max-w-4xl mb-8 w-full text-center font-normal text-gray-500">
         Are you tired of juggling tools for transcription, translation, and
-        note-taking? Meet Transcribe AI, the ultimate solution to handle your
+        note-taking? Meet Transcrypt AI , the ultimate solution to handle your
         conversations, meetings, and recordings with ease. Powered by
-        cutting-edge AI, Transcribe AI converts speech into text seamlessly,
+        cutting-edge AI, Transcrypt AI  converts speech into text seamlessly,
         translates it into multiple languages, and even summarizes meetings
         into actionable insights. Whether you’re managing international teams,
-        taking lecture notes, or simplifying your workflow, Transcribe AI is
+        taking lecture notes, or simplifying your workflow, Transcrypt AI  is
         here to save you time and effort.
       </div>
       <div className="mt-8 w-full grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -45,7 +45,7 @@ export function AboutEvent() {
           <AboutCard
             title="Generating Organized Meeting Minutes!"
             subTitle=""
-            description="Transform lengthy discussions into structured, actionable meeting minutes with just one click. Transcribe AI organizes your transcriptions into a concise summary, highlighting key points and decisions. Save time and ensure everyone stays on the same page, whether it’s for follow-ups or documentation."
+            description="Transform lengthy discussions into structured, actionable meeting minutes with just one click. Transcrypt AI  organizes your transcriptions into a concise summary, highlighting key points and decisions. Save time and ensure everyone stays on the same page, whether it’s for follow-ups or documentation."
           />
         </div>
       </div>

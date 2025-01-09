@@ -11,8 +11,8 @@ import EventContentCard from "@/components/event-content-card";
 
 const EVENT_CONTENT = [
   {
-    title: "Transcribe AI – The Ultimate Productivity Booster!",
-    des: "Transcribe AI is a game-changer! It’s incredibly accurate in converting speech to text, and the instant translation feature works flawlessly. The meeting minutes generator is a lifesaver for team discussions and follow-ups. A must-have app for professionals and students alike!",
+    title: "Transcrypt AI  – The Ultimate Productivity Booster!",
+    des: "Transcrypt AI  is a game-changer! It’s incredibly accurate in converting speech to text, and the instant translation feature works flawlessly. The meeting minutes generator is a lifesaver for team discussions and follow-ups. A must-have app for professionals and students alike!",
     name: "Zubair Ahsan",
     position: "Operations Analyst, Vertex Dynamics",
     panel: "Canada",

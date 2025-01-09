@@ -5,24 +5,24 @@ import { Accordion, AccordionHeader, AccordionBody } from "@material-tailwind/re
 
 const FAQS = [
   {
-    title: "1. What is Transcribe AI, and how does it work?",
-    desc: "Transcribe AI is an advanced app designed to transcribe speech into text, translate it into multiple languages, and summarize meeting notes. It uses state-of-the-art AI to ensure accuracy and speed. Simply start the app, choose your input and target languages, and let the AI do the rest in real-time.",
+    title: "1. What is Transcrypt AI , and how does it work?",
+    desc: "Transcrypt AI  is an advanced app designed to transcribe speech into text, translate it into multiple languages, and summarize meeting notes. It uses state-of-the-art AI to ensure accuracy and speed. Simply start the app, choose your input and target languages, and let the AI do the rest in real-time.",
   },
   {
-    title: "2. Is Transcribe AI suitable for non-English languages?",
-    desc: "Yes! Transcribe AI supports multiple languages, including English, Urdu, Chinese, French, Spanish, and more. Whether you need transcription, translation, or both, Transcribe AI ensures accurate results across different languages.",
+    title: "2. Is Transcrypt AI  suitable for non-English languages?",
+    desc: "Yes! Transcrypt AI  supports multiple languages, including English, Urdu, Chinese, French, Spanish, and more. Whether you need transcription, translation, or both, Transcrypt AI  ensures accurate results across different languages.",
   },
   {
     title: "3. Can I edit the transcriptions and translations?",
     desc: "Absolutely! You can edit both transcriptions and translations directly within the app. Each chat bubble has an option to toggle edit mode, making it easy to refine or correct the text before saving or sharing.",
   },
   {
-    title: "4. Is my data secure when using Transcribe AI?",
-    desc: "Yes, your privacy is our top priority. Transcribe AI processes transcriptions and translations securely, and your data is not shared with third parties. You also have full control over saving or deleting your logs.",
+    title: "4. Is my data secure when using Transcrypt AI ?",
+    desc: "Yes, your privacy is our top priority. Transcrypt AI  processes transcriptions and translations securely, and your data is not shared with third parties. You also have full control over saving or deleting your logs.",
   },
   {
-    title: "5. Can I use Transcribe AI to generate meeting minutes?",
-    desc: "Yes! Transcribe AI has a powerful meeting minutes generator. It compiles key points from transcriptions and translations into concise, structured summaries, saving you time and ensuring nothing is missed during your discussions.",
+    title: "5. Can I use Transcrypt AI  to generate meeting minutes?",
+    desc: "Yes! Transcrypt AI  has a powerful meeting minutes generator. It compiles key points from transcriptions and translations into concise, structured summaries, saving you time and ensuring nothing is missed during your discussions.",
   },
 ];
 

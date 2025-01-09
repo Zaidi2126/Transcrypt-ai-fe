@@ -43,7 +43,7 @@ export function OurStats() {
           onPointerEnterCapture={() => {}} // Added event handler
           onPointerLeaveCapture={() => {}} // Added event handler
         >
-          Transcribe AI Highlights
+          Transcrypt AI  Highlights
         </Typography>
         <Typography {...({} as any)} 
           variant="lead"
