@@ -44,7 +44,7 @@ export function EventContent() {
       
       <div className="mx-auto container">
         {EVENT_CONTENT.map((props, idx) => (
-          <EventContentCard key={idx} {...props} />
+          <EventContentCard key={idx} {...props}  />
         ))}
       </div>
     </section>

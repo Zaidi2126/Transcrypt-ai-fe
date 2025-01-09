@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { StaticImageData } from "next/image";
+
 import {
   Typography,
   Card,
@@ -13,7 +15,7 @@ interface EventContentCardProps {
   name: string;
   position: string;
   panel: string;
-  img: string;
+  img: StaticImageData;
 }
 
 export function EventContentCard({
