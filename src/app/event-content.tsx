@@ -7,7 +7,9 @@ import {
 } from "@material-tailwind/react";
 
 import EventContentCard from "@/components/event-content-card";
-
+import avatar1 from "/image/avatar1.jpg";
+import avatar2 from "/image/avatar2.jpg";
+import avatar3 from "/image/avatar3.jpg";
 
 const EVENT_CONTENT = [
   {
@@ -16,7 +18,7 @@ const EVENT_CONTENT = [
     name: "Zubair Ahsan",
     position: "Operations Analyst, Vertex Dynamics",
     panel: "Canada",
-    img: "/image/avatar1.jpg",
+    img: avatar1,
   },
   {
     title: "高效又智能的语音转文字神器",
@@ -24,7 +26,7 @@ const EVENT_CONTENT = [
     name: "Blank",
     position: "Project Coordinator, BlueDot Innovations",
     panel: "China",
-    img: "/image/avatar2.jpg",
+    img: avatar2,
   },
   {
     title: "ٹرانسکرائب اے آئی – ایک حیرت انگیز ایپ!",
@@ -32,7 +34,7 @@ const EVENT_CONTENT = [
     name: "Rabi ul Islam",
     position: "Content Strategist, GrowthHive Media",
     panel: "Pakistan",
-    img: "/image/avatar3.jpg",
+    img: avatar3,
   },
 ];
 
