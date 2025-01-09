@@ -1,8 +1,8 @@
 [build]
-  command = "npm run build" # Build your Next.js app
-  publish = ".next" # Publish directory for Next.js
-  environment = { NODE_VERSION = "18" } # Ensure compatibility
+  command = "npm run build"
+  publish = ".next"
+  environment = { NEXT_FORCE_EDGE_IMAGES = "true" }
 
 [functions]
-  node_bundler = "esbuild" # Use esbuild for function bundling
-  external_node_modules = ["sharp"] # Exclude sharp from bundling
+  node_bundler = "esbuild"
+  external_node_modules = ["sharp"]
