@@ -1,0 +1,8 @@
+[build]
+  command = "npm run build" # Build your Next.js app
+  publish = ".next" # Publish directory for Next.js
+  environment = { NODE_VERSION = "18" } # Ensure compatibility
+
+[functions]
+  node_bundler = "esbuild" # Use esbuild for function bundling
+  external_node_modules = ["sharp"] # Exclude sharp from bundling
