@@ -7,9 +7,9 @@ import {
 } from "@material-tailwind/react";
 
 import EventContentCard from "@/components/event-content-card";
-import avatar1 from "/image/avatar1.jpg";
-import avatar2 from "/image/avatar2.jpg";
-import avatar3 from "/image/avatar3.jpg";
+import avatar1 from "public/image/avatar1.jpg";
+import avatar2 from "public/image/avatar2.jpg";
+import avatar3 from "public/image/avatar3.jpg";
 
 const EVENT_CONTENT = [
   {
